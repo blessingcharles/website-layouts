@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+.intro{
+    background-image: linear-gradient(to right bottom , rgb(52, 180, 235), rgb(73, 185, 233));
+    height: 100vh;
+    text-align: center;
+    align-self: center;
+}
+.content{
+    background-image: linear-gradient(to right bottom , rgb(182, 197, 252), hsl(228, 24%, 96%));
+    padding: 1rem;
+}
+.website-title{
+    font-family: "Sofia",sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media only screen and (min-width:600px){
+
+    .intro , .content{
+        margin-left:5rem ;
+    }
+
+}
